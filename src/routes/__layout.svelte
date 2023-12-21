@@ -8,7 +8,23 @@
         display: grid;
         place-content: center;
         min-height: 100vh;
+        font-family:
+			system-ui,
+			-apple-system,
+			BlinkMacSystemFont,
+			'Segoe UI',
+			Roboto,
+			Oxygen,
+			Ubuntu,
+			Cantarell,
+			'Open Sans',
+			'Helvetica Neue',
+			sans-serif;
 	}
+
+    :global(h1,h2,h3,h4,h5){
+        margin:0px
+    }
 
     div{
         aspect-ratio: 9/16;
