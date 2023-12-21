@@ -33,10 +33,12 @@
 
 	span {
 		display: block;
+        font-weight: 600;
 	}
 
 	strong {
 		color: #444;
+        font-size: 14px;
 		font-weight: 500;
 	}
 </style>
