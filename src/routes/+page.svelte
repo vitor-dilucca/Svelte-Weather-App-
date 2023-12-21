@@ -1,15 +1,18 @@
 <script>
 	import Layout from '../routes/__layout.svelte';
-
+	import WeatherFooter from '../components/weather-footer.svelte';
 	import { getWeatherFrom } from '../services/weather.js';
 	const weatherPromise = getWeatherFrom();
 </script>
 
 {#await weatherPromise then weather}
+<section>
 	<h1>{weather.locationName}</h1>
 	<h2>{weather.temperature}°C</h2>
 	<h3>{weather.conditionText}</h3>
 	<h4>{weather.windSpeed}</h4>
+</section>
+<WeatherFooter/>
 {/await}
 
 <style>
